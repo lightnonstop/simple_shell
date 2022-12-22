@@ -5,8 +5,11 @@
   * @arr: Array for path
   * @file: File name
   * @filelen: Length of file name
+  * @ind2: Index 2
+  * @ind1: Index 1
+  * @tkin: Token index
   */
-void get_path(char **token, char **arr, 
+void get_path(char **token, char **arr,
 	char **file, int *filelen, int *ind2, int *ind1, int *tkin)
 {
 	int arrlen;
