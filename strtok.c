@@ -24,6 +24,7 @@ unsigned int is_delim(char c, const char *delim)
 char *_strtok(char *str, const char *delim)
 {
 	static char *backup_string;
+	char *ret = NULL;
 
 	if (!str)
 	{
@@ -44,7 +45,7 @@ char *_strtok(char *str, const char *delim)
 			return (NULL);
 		break;
 	}
-	char *ret = str;
+	ret = str;
 
 	while (1)
 	{
